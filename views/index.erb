@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Superheroes app</title>
+</head>
+<body>
+	<table>
+		<tr>
+			<th>Nombre</th>
+			<th>Nivel De Poder</th>
+		</tr>
+		<%session[:heroes].each do |heroe|%>
+		<tr>
+			<td><%=heroe.nombre%></td>
+			<td><%=heroe.nivelDePoder%></td>
+		</tr>
+		<%end%>
+	</table>
+</body>
+</html>
